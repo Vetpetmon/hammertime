@@ -1,0 +1,6 @@
+{
+  "parent": "hammertime:item/heldhammer",
+  "textures": {
+    "layer0": "hammertime:item/iron_hammer"
+  }
+}
