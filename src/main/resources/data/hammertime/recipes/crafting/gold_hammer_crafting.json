@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:string"
+    },
+    "V": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "IIC",
+    " VI",
+    "V I"
+  ],
+  "result": {
+    "item": "hammertime:gold_hammer"
+  },
+  "show_notification": true
+}
