@@ -41,7 +41,7 @@ public class Hammertime {
     // Create base-game hammers
     public static final RegistryObject<Item>
         DIAMOND_HAMMER =    ITEMS.register("diamond_hammer",    () -> newHammer(Tiers.DIAMOND)),
-        NETHERITE_HAMMER =  ITEMS.register("netherite_hammer",  () -> newHammer(Tiers.NETHERITE)),
+        NETHERITE_HAMMER =  ITEMS.register("netherite_hammer",  () -> new HammerItem(Tiers.NETHERITE, 8,-2.9f, new Item.Properties().stacksTo(1).fireResistant(), 0)),
         STONE_HAMMER =      ITEMS.register("stone_hammer",      () -> newHammer(Tiers.STONE)),
         IRON_HAMMER =       ITEMS.register("iron_hammer",       () -> newHammer(Tiers.IRON)),
         GOLD_HAMMER =       ITEMS.register("gold_hammer",       () -> newHammer(Tiers.GOLD));
