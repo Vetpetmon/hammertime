@@ -40,11 +40,11 @@ public class Hammertime {
 
     // Create base-game hammers
     public static final RegistryObject<Item>
-        DIAMOND_HAMMER =  ITEMS.register("diamond_hammer",  () -> newHammer(Tiers.DIAMOND)),
-        STONE_HAMMER =    ITEMS.register("stone_hammer",    () -> newHammer(Tiers.STONE)),
-        IRON_HAMMER =     ITEMS.register("iron_hammer",     () -> newHammer(Tiers.IRON)),
-        GOLD_HAMMER =     ITEMS.register("gold_hammer",     () -> newHammer(Tiers.GOLD));
-
+        DIAMOND_HAMMER =    ITEMS.register("diamond_hammer",    () -> newHammer(Tiers.DIAMOND)),
+        NETHERITE_HAMMER =  ITEMS.register("netherite_hammer",  () -> newHammer(Tiers.NETHERITE)),
+        STONE_HAMMER =      ITEMS.register("stone_hammer",      () -> newHammer(Tiers.STONE)),
+        IRON_HAMMER =       ITEMS.register("iron_hammer",       () -> newHammer(Tiers.IRON)),
+        GOLD_HAMMER =       ITEMS.register("gold_hammer",       () -> newHammer(Tiers.GOLD));
 
     public static HammerItem newHammer(Tier tier) {
         return new HammerItem(tier, 8,-2.9f, new Item.Properties().stacksTo(1), 0);
@@ -78,6 +78,7 @@ public class Hammertime {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(IRON_HAMMER);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(GOLD_HAMMER);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(DIAMOND_HAMMER);
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(NETHERITE_HAMMER);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -57,3 +57,8 @@ Import into your IDE of choice, direct the gradle wrapper to use JDK 21, and run
 
 # Add as a dependency
 TODO
+
+
+# Credits
+Code: Modoromu (モドローム)
+Art: TBA
