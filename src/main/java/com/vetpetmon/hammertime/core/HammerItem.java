@@ -82,9 +82,9 @@ public class HammerItem extends PickaxeItem {
 
         for(int x = -range; x <= range; x++) for(int y = -range; y <= range; y++){
             switch (traceResult.getDirection().ordinal()){
-                case 0,1-> positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY(), initalBlockPos.getZ() + y));
-                case 2,3-> positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY() + y, initalBlockPos.getZ()));
-                case 4,5-> positions.add(new BlockPos(initalBlockPos.getX(), initalBlockPos.getY() + y, initalBlockPos.getZ() + x));
+                case 0,1-> positions.add(new BlockPos(initalBlockPos.getX() + x,    initalBlockPos.getY(),      initalBlockPos.getZ() + y));
+                case 2,3-> positions.add(new BlockPos(initalBlockPos.getX() + x,    initalBlockPos.getY() + y,  initalBlockPos.getZ()));
+                case 4,5-> positions.add(new BlockPos(initalBlockPos.getX(),        initalBlockPos.getY() + y,  initalBlockPos.getZ() + x));
             }
         }
 
