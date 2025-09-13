@@ -18,9 +18,19 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+import java.util.Random;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Hammertime.MODID)
 public class Hammertime {
+
+    private String[] funnyMessage = {
+            "I want to make them look like the right weapon, to hammer in the right look.",
+            "If the shape isn't right I oughta change it to hit the nail on the head better.",
+            "I thought they looked kinda sharp, but now you've left me feeling kind of flat.",
+            "... Even if you were blunt about it.",
+            "Nailed it!",
+    };
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "hammertime";
@@ -57,6 +67,9 @@ public class Hammertime {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        // Get a funny message and send it to log
+        LOGGER.info(funnyMessage[new Random(System.currentTimeMillis()).nextInt(funnyMessage.length)]);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
