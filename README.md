@@ -56,9 +56,11 @@ Now, all that is left is a lang file entry and adding in your texture. It's that
 Import into your IDE of choice, direct the gradle wrapper to use JDK 21, and run `build` to compile the jar
 
 # Add as a dependency
-TODO
+
+Hammertime! can be added to your buildscript through Curseforge Maven. Select the version you wish to add to your development environment on Curseforge, and copy the NeoForge/Forge dependency lines.
+
 
 
 # Credits
 Code: Modoromu (モドローム)
-Art: TBA
+Art: Fishbowls & Bilebirda
