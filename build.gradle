@@ -173,7 +173,7 @@ dependencies {
     //annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Optional, just for runClient
-    runtimeOnly fg.deobf("curse.maven:better-combat-by-daedelus-639842:5625757")
+//    runtimeOnly fg.deobf("curse.maven:better-combat-by-daedelus-639842:5625757")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     testAnnotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
