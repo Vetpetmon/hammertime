@@ -1,0 +1,9 @@
+{
+  "values": [
+    "hammertime:stone_hammer",
+    "hammertime:iron_hammer",
+    "hammertime:gold_hammer",
+    "hammertime:diamond_hammer",
+    "hammertime:netherite_hammer"
+  ]
+}
