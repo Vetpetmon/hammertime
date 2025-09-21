@@ -45,7 +45,7 @@ public class HammerItem extends PickaxeItem {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity living, LivingEntity entity) {
-        entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,100,3));
+        living.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,100,3));
         return super.hurtEnemy(stack, living, entity);
     }
 
